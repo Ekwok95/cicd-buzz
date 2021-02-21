@@ -5,5 +5,5 @@ if [ "$TRAVIS_BRANCH" = "main" ]; then
 else
     TAG="$TRAVIS_BRANCH"
 fi
-docker build -f Dockerfile -t $TRAVIS_REPO_SLUG:$TAG .
-docker push $TRAVIS_REPO_SLUG:$TAG
+docker build -f Dockerfile -t ekwok95/cicd-buzz:$TAG .
+docker push ekwok95/cicd-buzz:$TAG
